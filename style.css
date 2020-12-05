@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body{
+    font-family: monsterrat;
+}
+/*****navbar***/
+.navbar{
+    background:transparent;
+    float: right;
+}
+.navbar-brand{
+    float: left;
+}
+.navbar-nav a{
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+}
+.text{
+    margin-top:20vh;
+}
+/****end navbar***/
+/***image-text****/
+.image-text{
+    width: 100%;
+    height: 900px;
+    /* position: relative; */
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 0;
+}
+.image-text p{
+    font-weight: 500;
+}
+.image-text p::first-letter{
+    font-size: 50px;
+    font-weight: 600;
+}
+.image-text h1{
+    font-size: 50px;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+}
+.image-text h1::first-letter{
+    font-size: 80px;
+    color: black;
+}
+.about-head h1{
+   text-align: center;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 50px;
+}
+.sub-about-head{
+    box-shadow: 4px 4px 4px 4px #acaaaa;
+    padding-bottom: 10px;
+    /* margin-left: 2%; */
+}
+.welcome-text h1{
+    color: white;
+    font-size: 30px;
+    font-family: 'Libre Baskerville', serif;
+}
+.welcome-text h1::first-letter{
+    font-size: 120px;
+    color: white;
+}
+.services{
+    padding-top: 20px;
+}
+.sub-about-head:hover{
+    box-shadow: 6px 6px 6px 6px #acaaaa;
+    transition: 0.3s all ease;
+}
+.sub-about-head p{
+    font-size: 13px;
+}
+.sub-about-head img:hover{
+    width: 102%;
+    height: 215px;
+    transition: 0.3s all ease;
+}
+.sub-about-head h1{
+font-family: 'Quicksand', sans-serif;
+text-align: center;
+}
+
+.historical-places h5{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+/* .card{
+    /* box-shadow: 3px 3px 3px 3px #acaaaa;
+    padding-bottom: 10px; */
+.land{
+    background-color: purple;
+    color: white;
+    padding:20px 20px;
+    box-shadow: 4px 4px 4px 4px #acaaaa;
+    padding-bottom: 10px;
+    transition: transform .2s;
+}
+.water{
+    background-color: rgb(255, 145, 0);
+    color: white;
+    padding:20px 20px;
+    box-shadow: 4px 4px 4px 4px #acaaaa;
+    padding-bottom: 10px;
+    transition: transform .2s;
+    
+}
+.sky{
+    background-color: rgb(245, 3, 184);
+    color: white;
+    padding:20px 20px;
+    box-shadow: 4px 4px 4px 4px #acaaaa;
+    padding-bottom: 10px;
+    transition: transform .2s;
+}
+.ladakh{
+    background-color: rgb(245, 3, 3);
+    color: white;
+    padding:20px 20px;
+    box-shadow: 4px 4px 4px 4px #acaaaa;
+    padding-bottom: 10px;
+    transition: transform .2s;
+}
+.land:hover{
+    transform: scale(1.05); 
+}
+.sky:hover{
+    transform: scale(1.05); 
+}
+.water:hover{
+    transform: scale(1.05); 
+}
+.ladakh:hover{
+    transform: scale(1.05); 
+}
+.about-head p{
+    text-align: center;
+ }
+
+ .blocks{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .team-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+ .contact-head{
+     text-align: center;
+ }
+ .about-text h1{
+     margin-top: 50vh;
+    text-align: center;
+    font-size: 65px;
+ }
+ .checked{
+     color: orange;
+ }
+ .historical-places{
+     background-image: url("img/bg-blur.jpg");
+     width: 100%;
+     /* filter: blur(2px);
+  -webkit-filter: blur(2px); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .reviews{
+     background-color: rgba(221, 238, 238, 0.692);
+     padding-bottom: 20px;
+ }
+ .newsletter{   
+    padding: 20px;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 0;
+    margin-bottom: 100px;
+ }
+ .counter{
+     margin-top: 5%;
+ }
+
+ .newsletter h1{
+     color: white;
+ }
+
+ .newsletter p{
+    color: white;
+}
+ .news-div{
+     padding-bottom: 20px;
+ }
+ 
+ .climate-card{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+/* .image-text .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    opacity: .3;
+    background-color: purple;
+    height: 850px;
+} */
+/* .text h1{
+
+} */
+/***.image-text end*****/
+
+/***about.html****/
+.welcome-text h1{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: rgb(246, 228, 207); 
+}
+
+.para{
+    padding-top: 15px;
+}
+.main-para{
+    -webkit-box-shadow: 0 0 12px rgb(189, 188, 188);
+    box-shadow: 0 0 12px rgb(189, 188, 188);
+    padding-bottom: 10px;
+}
+
+.main-para p{
+   text-align: center;
+   padding-right: 10px;
+   padding-left: 10px;
+}
+.para h1{
+     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+}
+.indian-history{
+    -webkit-box-shadow: 0 0 15px rgb(189, 188, 188);
+    box-shadow: 0 0 15px rgb(189, 188, 188);
+    background-color: rgb(220, 241, 232);
+}
+.indian-history .block-1{
+    padding-bottom: 20px;
+}
+.indian-history p{
+    padding-top: 40px;
+}
+.indian-history img{
+    padding-top: 25px ;
+
+}
+.facts{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.facts img{
+    -webkit-box-shadow: 0 0 25px rgb(189, 188, 188);
+    box-shadow: 0 0 25px rgb(189, 188, 188);
+}
+.climate h5{
+    font-family: 'Quicksand', sans-serif;   
+    text-align: center;
+}
+.season-card{
+    top:30px;
+}
+.states{
+    padding-top: 50px;
+}
+.states-list{
+    padding-top:10px ;
+    background-color: rgb(218, 235, 241);
+    border-radius: 5px;
+}
+.states ul li{
+    padding: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.states h4{
+    padding-top: 10px;
+    font-family: 'Quicksand', sans-serif;  
+}
+.currency{
+    padding-top: 20px;
+}
+.line{
+    width: 30%;
+    border: 1px solid rgb(46, 18, 173);
+    align-content: center;
+}
+/*****destination.html***/
+.popular-destin h3{
+    font-family: 'Quicksand', sans-serif;  
+}
+.popular-destin img{
+    display: block;
+}
+.popular-destin{
+    padding-bottom: 50px;
+}
+
+.hovereffect {
+    width: 80%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+    background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+  }
+  
+  .hovereffect .overlay {
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 3em;
+    text-align: left;
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 60px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+    transition: opacity 0.35s, transform 0.45s;
+    -webkit-transform: translate3d(-40px,0,0);
+    transform: translate3d(-40px,0,0);
+  }
+  
+  
+  
+  .hovereffect .overlay:before {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid #fff;
+    content: '';
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+    transition: opacity 0.35s, transform 0.45s;
+    -webkit-transform: translate3d(-20px,0,0);
+    transform: translate3d(-20px,0,0);
+  }
+  
+ 
+  
+  .hovereffect:hover img {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  
+  .hovereffect:hover .overlay:before,
+  .hovereffect:hover a, .hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+/****experience.html****/  
+.about-head h3{
+    font-family: 'Quicksand', sans-serif;  
+    padding-top: 45px;
+}
+.about-head p{
+    padding-top: 10px;
+}
+.museum{
+    padding-bottom:15px ;
+}
+.museum h1{
+    padding:15px ;
+}
+.cuisine p{
+    padding-top: 40px;
+}
+.cuisine h3{
+    padding-bottom: 15px;
+}
+.footer h4{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+}
+.footer{
+    width: 100%;
+    background-color: rgb(16, 16, 133);
+    color: rgb(255, 255, 255);
+}
+.footer ul li a {
+    color: rgb(157, 227, 236);
+    text-decoration: none;
+}
+.team .fa{
+    color: chocolate;
+padding: 5px;
+font-size: 80px;
+width: 30px;
+text-align: center;
+text-decoration: none;
+}
+.team .fa-facebook{
+    font-size: 50px;
+}
+.team .fa-twitter{
+    font-size: 50px;
+}
+.team .fa-instagram{
+    font-size: 50px;
+}
+.nature h3{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 0.02px;
+}
+
+.team .fa:hover {
+    color: black;
+    text-decoration: none;
+
+}
+.museum h5{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;  
+    
+}
+.museum-card{
+    transition: transform .2s;   
+}
+.museum-card:hover{
+    transform: scale(1.05); 
+}
+
+
+
+.counters {
+    margin-top: 5%;
+	background: #0f479a;
+	color: #fff;
+	padding: 40px 20px;
+	border-top: 3px lightskyblue solid;
+}
+
+.counters .container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	text-align: center;
+}
+
+.counters i {
+	color: lightskyblue;
+	margin-bottom: 5px;
+}
+
+.counters .counter {
+	font-size: 45px;
+	margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+	.counters .container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.counters .container > div:nth-of-type(1),
+	.counters .container > div:nth-of-type(2) {
+		border-bottom: 1px lightskyblue solid;
+		padding-bottom: 20px;
+	}
+}
+
+
+@media (max-width:768px){
+    .tab-search{
+        top : -60px;
+    }
+
+}
+@media (max-width:858px){
+    .about-head h1{
+        font-size: 30px;
+        overflow: hidden;
+    }
+    .historical-places{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .indian-history{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer ul li a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .facts img{
+        height: 500px;
+    }
+    .fact-points{
+        padding-top: 30px;
+    }
+
+}

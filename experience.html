@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <!-- <a class="navbar-brand"style="color: white;" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link " style="color: white;" href="index.html">Travel <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link " style="color: white;" href="about.html">About India</a>
+            <a class="nav-item nav-link " style="color: white;" href="destination.html">Destination</a>  
+            <a class="nav-item nav-link active"style="color: white; font-weight: 700;" href="#">Experience</a>      
+          </div>
+        </div>
+      </nav>
+      <section class ="image-text" style="background-image:url('img/experience.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters main-head">
+                <div class="col-lg-7 col-md-6">
+                    <div class = text>
+                        <!-- <h1>India</h1> -->
+                        <p style="color: wheat;">Time spent in India has an extraordinary effect on one. It acts as a barrier that makes the rest of the world seem unreal.</p>
+                        <!-- <a href="#" class="btn btn-warning"role="button" aria-pressed="true">View</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="cuisine">
+          <div class="container">
+              <div class="row">
+                  <div class ="col-md-12">
+                      <p>Known for its diversity that varies with every region, state, community, culture and even religion, food in India is a vibrant assortment of uncountable dishes. It is distinctly characterised by the subtle and sophisticated use of spices, grains, fruits and vegetables that are all grown in the country. Home to people of many religions who come from a plethora of cultural backgrounds, the food culture of the country has been influenced by all of them, including foreigners.<br>
+                          <br>No wonder, Indian cuisine was the focal point of many cultures. So where does one really begin to understand a cuisine that is ancient and yet has constantly evolved to stay relevant to the present time? An easy primer into Indian food starts with understanding the five prominent regions of the country and how the cuisine developed in these parts – essentially the north, east, south, northeast and west of India.
+                      </p>
+                  </div>
+                  <div class="col-md-12 about-head">
+                      <h1>Popular Food Destinations in India</h1>
+                      <h3>Explore the best flavors here</h3>
+                      <!-- <p>Known for its diversity that varies with every region, state, community, culture and even religion, food in India is a vibrant assortment of uncountable dishes. It is distinctly characterised by the subtle and sophisticated use of spices, grains, fruits and vegetables that are all grown in the country. Home to people of many religions who come from a plethora of cultural backgrounds, the food culture of the country has been influenced by all of them, including foreigners.</p> -->
+                  </div>
+                  <div class="col-md-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/food1.jpeg" alt="First slide" height="600px" width="100%">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>North</h5>
+                                <!-- <p>Mumbai</p> -->
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/food2.jpeg" height="600px" width="100%" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>South</h5>
+                                <!-- <p>Mumbai</p> -->
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/food3.jpeg" height="600px" width="100%" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>NorthEast</h5>
+                                <!-- <p>Mumbai</p> -->
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/food4.jpeg" height="600px" width="100%" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>East</h5>
+                                <!-- <p>Mumbai</p> -->
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/food5.jpeg" height="600px" width="100%" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>West</h5>
+                                <!-- <p>Mumbai</p> -->
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/food6.jpeg" height="600px" width="100%" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <!-- <h5>Mumbai</h5>
+                                <p>Mumbai</p> -->
+                              </div>
+                          </div>
+                          
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="museum">
+          <div class="container">
+              <div class="row d-flex  justify-content-center">
+                <div class="col-md-12 about-head">
+                    <h1>Museums</h1>
+                    <p>The glorious ancient history of India withits rich cultural heritage and a vibrant potpourri of traditions has beenimmortalised in various museums and galleries across the country.
+                      Frompre-historic relics, impressive art forms and unique collections of rareartefacts to priceless antiques, luxurious vestiges and other fascinatingdisplays, the museums of India are overflowing treasure troves that leave youwith an everlasting pride in the magnificence of the country.</p>
+                </div>
+                  <div class="col-md-3 ">
+                    <div class="card museum-card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/m1.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Raja Dinkar Kelkar Museum</h5>
+                          <p class="card-text">Embroidered textiles, sculptures, antique vessels of copper and swords that belonged to the bravehearts of the Peshwa empire - all this and more can be found at the Raja Dinkar Kelkar Museum.</p>
+                          <a href="#" class="btn btn-warning">Know more</a>
+                        </div>
+                    </div>
+                    <div class="card museum-card" style="width: 18rem;">
+                      <img class="card-img-top" src="img/m6.jpeg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title"> Visvesvaraya Industrial And Technological Museum</h5>
+                        <p class="card-text">Established in the memory of Bharat Ratna Sir M Visvesvaraya, Visvesvaraya Industrial and Technological Museum (VITM) is a popular attraction for industrial engines and products.</p>
+                        <a href="#" class="btn btn-warning">Know more</a>
+                      </div>
+                    </div>
+                    
+                  </div>
+                    <div class="col-md-3">
+                        <div class="card museum-card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/m4.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Assam State Museum</h5>
+                              <p class="card-text">For a deeper insight into the history and culture of the state, Assam State Museum, located at the heart of the city, is a great stopover. The collections include royal garments, weapons, paintings, sculptures, stone and copper inscriptions, woodwork and more.</p>
+                              <a href="#" class="btn btn-warning">Know more</a>
+                            </div>
+                          </div>
+                          <div class="card museum-card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/m3.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Maharaja Fateh Singh Museum</h5>
+                              <p class="card-text">
+                                Established in 1961, Maharaja Fateh Singh Museum is located in the grounds of Lakshmi Vilas Palace. It has been built inside what was Motibaug School, constructed for Maharaja Sayajirao Gaekwad III in 1875</p>
+                              <a href="#" class="btn btn-warning">Know more</a>
+                            </div>
+                        </div>
+                         
+                  </div>
+                  <div class="col-md-3 ">
+                    <div class="card museum-card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/m5.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">State Museum</h5>
+                          <p class="card-text">Established in 2009 with an aim to preserve and display the centuries-old cultural, historical and archaeological heritage of Jharkhand, the State Museum at Hotwar has seven amazing galleries. The museum was set up on the premises of the Tribal Research Institute in 1974 but was later shifted to Hotwar. </p>
+                          <a href="#" class="btn btn-warning">Know more</a>
+                        </div>
+                      </div>
+                     
+                      <div class="card museum-card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/m2.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Bengal Natural History Museum
+                          </h5>
+                          <p class="card-text"> Bengal Natural History Museum, displaying one of the finest collections of natural artefacts and fossils, was incorporated into the West Bengal Zoo Authority in 2015 to allow for better upkeep and maintenance.</p>
+                          <a href="#" class="btn btn-warning">Know more</a>
+                        </div>
+                      </div>
+              </div>
+              </div>
+          </div>
+      </section>
+      <section class="nature">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                    <div class="col-md-12 about-head">
+                      <h1>Nature and Wildlife</h1></div>
+                      <p>From hauntingly beautiful snowy escapades to lush forests and hills of rolling green, from the endless golden beaches to the sapphire and emerald lakes embedded in the landscape, the natural beauty of the Indian subcontinent is unparalleled. The unspoilt and unexplored terrains of the country leave one in awe of their breathtaking splendour. Moreover, the differences and contrasts of one region from another accentuate the appeal of these landscapes - be it the frigid cold deserts of Leh that call to the soul-searcher in you or the sun-drenched mystique desert dunes of Rajasthan that take you back to the times of royals. Starting from the snow-capped Himalayas in the north, traversing the deserts of Rajasthan, crossing the lush forests of Madhya Pradesh and then sailing in the expansive backwaters of Kerala, and finally diving into the pristine waters of the Andaman and Nicobar Islands, the journey is full of adventurous highlands and serene plains and lowlands. A land boasting a diverse variety of flora and fauna, India is also home to many national parks, wildlife sanctuaries, tiger reserves and biosphere reserves, which offer enchanting wildlife sightings.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="img/wild-1.jpg" alt="First slide" height="400px" width="100%">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/wild-2.jpeg" height="400px" width="100%" alt="Second slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/wild-3.jpeg" height="400px" width="100%" alt="Third slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/wild-4.jpeg" height="400px" width="100%" alt="Third slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/wild-5.jpg" height="400px" width="100%" alt="Third slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/wild-6.jpg" height="400px" width="100%" alt="Third slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                      <h3>Wild Animals</h3>
+                </div>
+                  <div class="col-md-6">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="img/rivers.jpg" alt="First slide" height="400px" width="100%">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/lakes1.jpg" height="400px" width="100%" alt="Second slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/lakes2.jpg" height="400px" width="100%" alt="Third slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/lakes3.jpg" height="400px" width="100%" alt="Third slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/lakes4.jpg" height="400px" width="100%" alt="Third slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/lakes.jpg" height="400px" width="100%" alt="Third slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                      <h3>Rivers and Lakes</h3>
+                </div>
+                 <!-- </div> -->
+                  <div class="col-md-6">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="img/mountains.jpg" alt="First slide" height="400px" width="100%">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/mountain-1.jpg" height="400px" width="100%" alt="Second slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/mountain-2.jpg" height="400px" width="100%" alt="Third slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/mountain-3.jpg" height="400px" width="100%" alt="Third slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/mountain-4.jpg" height="400px" width="100%" alt="Third slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/mountain-5.jpg" height="400px" width="100%" alt="Third slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <!-- <h5>Mumbai</h5>
+                              <p>Mumbai</p> -->
+                            </div>
+                        </div>
+                        
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                      <h3>Mountains</h3>
+                </div>
+                  <div class="col-md-6">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="img/desert.jpg" alt="First slide" height="400px" width="100%">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/deserts-1.jpg" height="400px" width="100%" alt="Second slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/deserts-2.jpg" height="400px" width="100%" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/deserts-3.jpg" height="400px" width="100%" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/deserts-4.jpg" height="400px" width="100%" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/deserts-2.jpg" height="400px" width="100%" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                          <h3>Deserts</h3>
+                   </div>
+
+                      <div class="col-md-6">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="img/forest-1.jpg" alt="First slide" height="400px" width="100%">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/forest-2.jpg" height="400px" width="100%" alt="Second slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/forest-3.jpg" height="400px" width="100%" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/forest-4.jpg" height="400px" width="100%" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/forest-5.jpg" height="400px" width="100%" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/forest-2.jpg" height="400px" width="100%" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                          <h3>Forests</h3>
+                    </div>
+                      <div class="col-md-6">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="img/birds-1.jpg" alt="First slide" height="400px" width="100%">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/birds-2.jpg" height="400px" width="100%" alt="Second slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/birds-3.jpg" height="400px" width="100%" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/birds-4.jpg" height="400px" width="100%" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/birds-5.jpg" height="400px" width="100%" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/birds-3.jpg" height="400px" width="100%" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <!-- <h5>Mumbai</h5>
+                                  <p>Mumbai</p> -->
+                                </div>
+                            </div>
+                            
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                          <h3>Birds</h3>
+                    </div>
+                    </div>
+                  </div>
+      </section>
+      <section class="footer">
+        <div class="container">
+            <div class="row d-flex">
+              <div class="states-footer col-md-4">
+                <h4>States Tourism Websites</h4>
+                <div class="d-flex">
+                <ul class="px-3">
+                  <li><a href="https://tourism.ap.gov.in/">Andhra_Pradesh</a></li>
+                  <li><a href="http://www.arunachaltourism.com/#0">Arunachal_Pradesh</a></li>
+                  <li><a href="https://tourism.assam.gov.in/">Assam</a></li>
+                  <li><a href="https://tourism.bihar.gov.in/">Bihar</a></li>
+                  <li><a href="http://cggovttourism.ddns.net/">Chattisgarh</a></li>
+                  <li><a href="https://goa-tourism.com/">Goa</a></li>
+                  <li><a href="https://www.gujarattourism.com/">Gujarat</a></li>
+                  <li><a href="https://haryanatourism.gov.in/">Haryana</a></li>
+                  <li><a href="https://haryanatourism.gov.in/">Himachal_Pradesh</a></li>
+                </ul>
+                <ul class="px-3">
+                   
+                    <li><a href="https://jharkhandtourism.gov.in/">Jharkhand</a></li>
+                    <li><a href="https://www.karnatakatourism.org/">Karnataka</a></li>
+                    <li><a href="https://www.keralatourism.org/">Kerala</a></li>
+                    <li><a href="https://www.mptourism.com/">Madhya_Pradesh</a></li>
+                    <li><a href="https://www.maharashtratourism.gov.in/">Maharashtra</a></li>
+                    <li><a href="http://www.manipurtourism.gov.in//"> Manipur</a></li>
+                    <li><a href="http://megtourism.gov.in/">Meghalay</a></li>
+                    <li><a href="https://tourism.mizoram.gov.in/">Mizoram</a></li>
+                    <li><a href="https://tourism.nagaland.gov.in//">Nagaland</a></li>
+                    
+                  </ul>
+                  <ul class="px-3">
+                   
+                   <li><a href="https://odishatourism.gov.in/content/tourism/en.html">Odisha</a></li>
+                    <li><a href="http://punjabtourism.gov.in//">Punjab</a></li>
+                    <li><a href="http://www.manipurtourism.gov.in//">Himachal_Pradesh</a></li>
+                    <li><a href="http://www.tourism.rajasthan.gov.in/">Rajasthan</a></li>
+                    <li><a href="http://www.tamilnadutourism.org/">Tamil_Nadu</a></li>
+                    <li><a href="https://www.telanganatourism.gov.in/">Telangana</a></li>
+                    <li><a href="http://tripuratourism.gov.in/">Tripura</a></li>
+                    <li><a href="http://www.uptourism.gov.in/">Uttar_Pradesh</a></li>
+                    <li><a href="https://uttarakhandtourism.gov.in/">Uttarakhand </a></li>
+                    <li><a href="http://www.wbtourismgov.in/">West_Bengal</a></li>
+                  </ul>
+              </div>
+            </div>
+              <div class="ut-footer col-md-6 " >
+                <h4>Union Territory Websites</h4>
+                <div class="d-flex justify-content-center">
+                    <ul  class="px-5">
+                      <li><a href="https://www.andaman.gov.in/">Andaman and Nicobar</a></li>
+                      <li><a href="http://chandigarhtourism.gov.in/">Chandigarg</a></li>
+                      <li><a href="https://www.tourismdddnh.in/">Dadra & Nagar Haveli</a></li>
+                      <li><a href="https://www.tourismdddnh.in/">Daman and Diu</a></li>
+                      <li><a href="http://www.delhitourism.gov.in/delhitourism/index.jsp">Delhi</a></li>
+                      <li><a href="http://www.jktourism.jk.gov.in/">Jammu and Kashmir</a></li>
+                      <li><a href="http://www.jktourism.jk.gov.in/">Ladakh</a></li>
+                      <li><a href="https://www.lakshadweeptourism.com/">Lakshadweep</a></li>
+                      <li><a href="http://www.pondytourism.in/">Puducherry</a></li>
+                   </ul>
+                </div>
+              </div>
+              <div style="float: right;margin-top: 10%;">
+                <h6>Created & Managed by:<br><br>Vanshika Pandey</h6>
+                <h6>&copy;Copyright 2020</h6>
+              </div>
+            </div>
+      </section>
+</body>
+</html>

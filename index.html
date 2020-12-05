@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" style="font-weight: 700;" href="#">Travel <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="about.html">About India</a>
+            <a class="nav-item nav-link" href="destination.html">Destination</a> 
+            <a class="nav-item nav-link" href="experience.html">Experience</a>   
+          </div>
+        </div>
+      </nav>
+      <section class ="image-text" style="background-image:url('img/main-image.jpg');">
+        <!-- <div class="overlay"></div> -->
+        <div class="container">
+            <div class="row no-gutters main-head">
+                <div class="col-lg-7 col-md-6">
+                    <div class = text>
+                        <h1>INDIA</h1>
+                        <p  style="color: black;">"India is the cradle of the human race, the birthplace of human speech, the mother of history, the grandmother of legend, and the great grand mother of tradition. Our most valuable and most artistic materials in the history of man are treasured up in India only!"</p>
+                        <!-- <a href="#" class="btn btn-primary"role="button" aria-pressed="true">View</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+<section class="search-tabs">
+        <div class="container">
+          <div class="row">
+            <div class ="col-md-12 tab-search">
+                <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
+                  <a class="nav-link active" data-toggle="pill" id ="v-pills-home-tab" role="tab" aria-controls="v-pills-home" aria-selected="true" href="#v-pills-home">Flights</a>
+
+                  <a class="nav-link" data-toggle="pill" id ="v-pills-profile-tab" role="tab" aria-controls="v-pills-profile" aria-selected="false" href="#v-pills-profile">Hotel</a>
+
+                  <a class="nav-link" data-toggle="pill" id ="v-pills-messages-tab" role="tab" aria-controls="v-pills-messages" aria-selected="false" href="#v-pills-messages">Car Rents</a>
+
+                  <a class="nav-link" data-toggle="pill" id ="v-pills-settings-tab" role="tab" aria-controls="v-pills-settings" aria-selected="false" href="#v-pills-settings">Cruises</a>
+                </div>
+            </div>
+           
+          <div class="tab-content py-5" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <div class="block-17">
+                <form class="d-block d-lg-flex">
+                  <div class="fields d-block d-lg-flex">
+
+                    <div class="textfield-search one-third"><input type="text" class="form-control" placeholder="Search Location"></div>
+
+                    <div class="check-in one-third"><input type="text" id="checkin_date" class="form-control" placeholder="Check-in date"></div>
+
+                    <div class="check-out one-third"><input type="text" id="checkout_date" class="form-control" placeholder="Check-out date"></div>
+                    <div class="select-wrap one-third">
+                   <select name="" id="" class="form-control">
+                        <option value="">Guest</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3+</option>
+                        
+                      </select>
+                    </div>
+                  </div>
+                  <input type="submit" class="search-submit btn btn-primary" value="Find Flights">
+                </form>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <div class="block-17">
+                <form action="" method="post" class="d-block d-lg-flex">
+                  <div class="fields d-block d-lg-flex">
+                    <div class="textfield-search one-third"><input type="text" class="form-control" placeholder="Search Hotel"></div>
+
+                    <div class="check-in one-third"><input type="text" id="checkin_date" class="form-control" placeholder="Check-in date"></div>
+
+                    <div class="check-out one-third"><input type="text" id="checkout_date" class="form-control" placeholder="Check-out date"></div>
+                    <div class="select-wrap one-third">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="" id="" class="form-control">
+                        <option value="">Guest</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3+</option>
+                        
+                      </select>
+                    </div>
+                  </div>
+                  <input type="submit" class="search-submit btn btn-primary" value="Find Hotels">
+                </form>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <div class="block-17">
+                <form action="" method="post" class="d-block d-lg-flex">
+                  <div class="fields d-block d-lg-flex">
+                    <div class="textfield-search one-third"><input type="text" class="form-control" placeholder="Search Location"></div>
+
+                    <div class="check-in one-third"><input type="text" id="start_date" class="form-control" placeholder="Start date"></div>
+
+                    <div class="check-out one-third"><input type="text" id="return_date" class="form-control" placeholder="Return date"></div>
+                    <div class="select-wrap one-third">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="" id="" class="form-control">
+                        <option value="">Guest</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3+</option>
+                        
+                      </select>
+                    </div>
+                  </div>
+                  <input type="submit" class="search-submit btn btn-primary" value="Find Car">
+                </form>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              <div class="block-17">
+                <form action="" method="post" class="d-block d-lg-flex">
+                  <div class="fields d-block d-lg-flex">
+                    <div class="textfield-search one-third one-third-1"><input type="text" class="form-control" placeholder="Search Location"></div>
+
+
+                    <div class="check-out one-third one-third-1"><input type="text" id="start_date" class="form-control" placeholder="Check-out date"></div>
+
+                    <div class="select-wrap one-third one-third-1">
+                      <div class="icon"></div>
+                      <select name="" id="" class="form-control">
+                        <option value="">Categories</option>
+                        <option value="">Suite</option>
+                        <option value="">Super Deluxe</option>
+                        <option value="">Economy</option>
+                        
+                      </select>
+                    </div>
+                  </div>
+                  <input type="submit" class="search-submit btn btn-primary" value="Find Cruise">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-12 about-head">
+        <h1>Welcome to India</h1>
+        <p>The National Tourism Day is celebrated on January 25 every year to raise influences, awareness within the international community and to demonstrate how it affects social, cultural, political and economic values worldwide.India is a home to the finest architectural heritage, serene ghats, spectacular landscapes and largest tiger reserve</p>
+      </div>
+      <div class ="col-md-3 col-sm-12   sub-about-head" style="margin-left:4%;">
+        <div>
+          <h1>Culture</h1>  
+          <p>Indian culture is the heritage of social norms, ethical values, traditional customs, belief systems, political systems, artifacts and technologies that originated in or are associated with the Indian subcontinent.Indian culture, often labelled as an amalgamation of several cultures, has been influenced by a history that is several millennia old, beginning with the Indus Valley Civilization.[1][2] Many elements of Indian culture, such as Indian religions, mathematics, philosophy, cuisine, languages, dance, music and movies have had a profound impact across the Indosphere, Greater India and the world.
+          </p>    
+          <img src="img/culture.jpg" alt="" height="200px" width="100%">  
+        </div>
+      </div>
+      <div class ="col-md-3 col-sm-12 sub-about-head " style="margin-left:4%;">
+        <div>
+          <h1>Tradition</h1>  
+          <p>In India, people feel great when any guest comes to their home. They greet their   guests with respect and with utmost care. Indian believes in the concept of “Atithi Devo Bhava” which means “The Guest is considered equal to God”.The gesture of the Namaste greeting is a part of the Indian culture. People greet by saying “Namaste” while joining their hands. “Namaste” means “Hello”. 
+            Most Indians have a habit of shaking their heads while talking.: Hinduism is one of the oldest religions that originated from India. The religion has preserved its culture since ancient times.India emerged as a region of developed civilization.</p>    
+          <img src="img/tradition.jpg" alt="" height="200px" width="100%">  
+        </div>
+      </div>
+      <div class ="col-md-3  col-sm-12 sub-about-head" style="margin-left:4%;">
+        <div>
+          <h1>History</h1>  
+          <p>India's history and culture is dynamic, spanning back to the beginning of human civilization. It begins with a mysterious culture along the Indus River and in farming communities in the southern lands of India. The history of India is punctuated by constant integration of migrating people with the diverse cultures that surround India. Available evidence suggests that the use of iron, copper and other metals was widely prevalent in the Indian sub-continent at a fairly early period, which is indicative of the progress that this part of the world had made. India had emerged as a region of highly developed civilization.</p>  
+          <img src="img/history.jpg" alt="" height="200px" width="100%">  
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+<div class="container">
+  <div class="row">
+    <div class ="col-md-12 about-head">
+      <h1>Service we provide</h1>
+      <p>Spirit of Adventure/ Allure of AdventureScale the heights of thrill, or plummet to the depths of excitement or if you're truly daring, survey gorgeous lands and waters, while suspended in the sky. All this and more awaits you as you explore land, water and sky adventures in the country. From trekking, mountain biking and mountaineering in the secluded snow-capped Himalayas to surfing, rafting, scuba diving and snorkelling, there are a multitude of options for thrill seekers. </p>
+    </div>
+    <div class ="col-md-12 blocks">
+      <div class="col-md-4">
+        <div class="land">
+      <h1>Land Adventures</h1>
+      <p>Mountaineering is one of the major land-based activities in India that can be explored in several destinations in the country. There’s the Beas Kund trail near Manali which begins at Solang Nallah and moves on to a pristine alpine lake, passing through meadows of Dhundi and Bakarthach.... </p><br>
+    <a href="#" class="btn " style="background-color: white;color: purple;font-weight: 700;"role="button" aria-pressed="true">Know More</a></div><br>
+      <div class="water">
+        <h1>Water Adventures</h1>
+        <p>Aquatic adventure reaches new levels of thrill when you embark on river rafting escapades. India is crisscrossed with rivers that run wild and it is a treat for adventure enthusiasts to journey through their rapids and currents aboard a raft. India has scenic and spirited rivers like the Ganges (Rishikesh)... </p><br>
+        <br>
+    <a href="#" class="btn " style="background-color: white;color: orange;font-weight: 700;"role="button" aria-pressed="true">Know More</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+    <div class="sky">
+      <h1>Sky <br>Adventures</h1>
+      <p>Feel like a bird as you paraglide over spectacular landscapes and survey nature's bounty laid out in splendour beneath you. Nandi Hills, located about 70 km from the city of Bengaluru, Karnataka, is a great spot for paragliding while enjoying picturesque mountain vistas ...,</p><br>
+      <a href="#" class="btn " style="background-color: white;color: palevioletred;font-weight: 700;"role="button" aria-pressed="true">Know More</a></div> <br>
+     
+      <div class="ladakh">
+      <h1>Ladakh Adventures </h1>
+      <p>The stark and pristine landscape of Ladakh, bound by rugged mountains, deep gorges and harsh terrain is ideal for adventure sports like trekking, mountain climbing, camping, etc. Moreover, the gurgling Indus and Zanskar rivers cutting through the scenery provide perfect backdrops for adventure in the water Chadar Trek can only be .... </p><br>
+      <a href="#" class="btn " style="background-color: white;color: red;font-weight: 700;"role="button" aria-pressed="true">Know More</a></div> <br>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="team">
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-12 about-head">
+      <h1>Team</h1>
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, est dolores! Fugit cupiditate asperiores, excepturi totam .</p> -->
+    </div>
+      <div class="card col-md-3 col-sm-12" style="width: 18rem;">
+        <img class="card-img-top" src="img/team-1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Aayushi Dangwal</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="fa fa-facebook s" style="font-size:larger;"></a>
+          <a href="#" class="fa fa-instagram" style="font-size:larger;"></a>
+          <a href="#" class="fa fa-twitter" style="font-size:larger;"></a>
+        </div>
+      </div>
+
+      <div class="card col-md-3" style="width: 18rem;">
+        <img class="card-img-top" src="img/team-1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Riya Rana</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="fa fa-facebook" style="font-size:larger;"></a>
+          <a href="#" class="fa fa-instagram" style="font-size:larger;"></a>
+          <a href="#" class="fa fa-twitter" style="font-size:larger;"></a>
+        </div>
+      </div>
+
+      <div class="card col-md-3" style="width: 18rem;">
+        <img class="card-img-top" src="img/team-1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"style="text-align: center;">Vanshika Pandey</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="fa fa-facebook"style="font-size:larger;"></a>
+          <a href="#" class="fa fa-instagram"style="font-size:larger;"></a>
+          <a href="#" class="fa fa-twitter"style="font-size:larger;"></a>
+        </div>
+      </div>
+
+      <div class="card col-md-3" style="width: 18rem;">
+        <img class="card-img-top" src="img/team-1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Aarushi Chopra</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="fa fa-facebook" style="font-size:larger;"></a>
+          <a href="#" class="fa fa-instagram"style="font-size:larger;"></a>
+          <a href="#" class="fa fa-twitter"style="font-size:larger;"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="historical-places " >
+  <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-12  about-head">
+          <h1>Historical Places</h1>
+          <p>Famous Historical Monuments in India to Visit .</p>
+        </div>
+        <div class ="col-md-4 col-sm-12">
+        <div class="card " style="width: 18rem;margin-bottom: 5%">
+          <img class="card-img-top" src="img/thanjavur.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Thanjavur</h5>
+            <p class="card-text">Scattered with gorgeous monuments, a legacy of the mighty Cholas, and ancient temples that are works of art, Thanjavur (popularly called Tanjore), in Tamil Nadu, stands as a glorious tribute to its former kings.</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+        </div>
+        <div class ="col-md-4 col-sm-12 ">
+        <div class="card " style="width: 18rem;margin-bottom: 5%">
+          <img class="card-img-top" src="img/madurai.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Madurai</h5>
+            <p class="card-text">One of the oldest living cities, Madurai, holds the soul of Tamil Nadu in its magnificent and grand temples that are among the finest and most awe-inspiring specimens of architecture in the country. The most spectacular of these is the Meenakshi-Sundareswarar Temple.</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+  
+      <div class ="col-md-4 col-sm-12">
+        <div class="card " style="width: 18rem;margin-bottom: 5%;">
+          <img class="card-img-top" src="img/tirupati.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Tirupati</h5>
+            <p class="card-text">Among the most popular global pilgrimage places, Tirupati, in Andhra Pradesh, is a stopover for those seeking spirituality and sanctity. Situated at the foot of Tirumala Hills. Tirupati Balaji or the Lord Venkatesha Temple is the main attraction here.</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+      <div class ="col-md-4 col-sm-12 ">
+        <div class="card " style="width: 18rem;margin-bottom: 5%">
+          <img class="card-img-top" src="img/jaipur.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Jaipur</h5>
+            <p class="card-text">The city of palaces and forts, interspersed with historical monuments and gardens that testify the grandeur of the Rajput kings, Jaipur is the gateway to the royal heritage of India. Also called Pink City, the capital of Rajasthan, remains suspended in time, with its heritage preserved in the overwhelming Hawa Mahal.</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+  
+      <div class ="col-md-4 col-sm-12">
+        <div class="card " style="width: 18rem; margin-bottom: 5%">
+          <img class="card-img-top" src="img/agra.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Agra</h5>
+            <p class="card-text">The city of the Taj Mahal, one of the seven wonders of the world, Agra in Uttar Pradesh is India's most popular tourist destination. Steeped in history, this ancient city is dotted with monuments, architectural wonders and beautifully landscaped gardens, which are remnants of the Mughal reign's majestic legacy.</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+      <div class ="col-md-4 col-sm-12">
+        <div class="card " style="width: 18rem;margin-bottom: 5%">
+          <img class="card-img-top" src="img/delhi.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Delhi</h5>
+            <p class="card-text">With old monuments and busy neighbourhoods subtly merging with a vibrant and contemporary cosmopolitan world, Delhi, the capital of India, is a fascinating tourist destination. Poised along the banks of River Yamuna, Delhi, which is almost 1,000 years old, offers a mesmeric mosaic of experiences, both heritage and contemporary.</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 about-head">
+        <h1>Reviews</h1>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Donald Trump</h5>
+            <h6 class="card-subtitle mb-2 text-muted">United States</h6>
+            <h6>Star Rating</h6>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star  checked"></span>
+            <span class="fa fa-star  checked"></span>
+            <p class="card-text">We have just returned from a fabulous trip to Amritsar and the Gold Triangle.The team in place in India are excellent . Pickup at the airport was prompt.</p>
+            <!-- <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Angela Merkel</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Germany</h6>
+            <h6>Star Rating</h6>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star  checked"></span>
+            <span class="fa fa-star"></span>
+            <p class="card-text">The trip was very organised and there were guides, taxi drivers ready to go at each point inc our journeys on trains and trips to and from the airport. The Shimla trip was lovely and certainly orthwhile..</p>
+            <!-- <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Boris Johnson</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Germany</h6>
+            <h6>Star Rating</h6>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star  checked"></span>
+            <span class="fa fa-star"></span>
+            <p class="card-text">Fabulous trip - Really professional tour guide, very well planned whose knowledge was shared in an interesting and thoughtful way. City hotels were fantastic.</p>
+            <!-- <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-12 about-head">
+          <h1>Contact Us</h1>
+      
+        </div>
+    <div class ="col-md-12">
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="name">
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" class="form-control" id="subject" placeholder="subject">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter"  style="background-image:url('img/newsletter-img.jpg');height: 200px;webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}">
+  <div class="overlay1"></div>
+  <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-12 about-head">
+          <h1>Join Our Newsletter</h1>
+          <p>Subscribe to our newsletter to stay updated.</p>
+        </div>
+        <div class="news-div d-flex">
+          <input type="text" id="news-box">
+          <button type="button" class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="footer">
+  <div class="container">
+      <div class="row d-flex">
+        <div class="states-footer col-md-4">
+          <h4>States Tourism Websites</h4>
+          <div class="d-flex">
+          <ul class="px-3">
+            <li><a href="https://tourism.ap.gov.in/">Andhra_Pradesh</a></li>
+            <li><a href="http://www.arunachaltourism.com/#0">Arunachal_Pradesh</a></li>
+            <li><a href="https://tourism.assam.gov.in/">Assam</a></li>
+            <li><a href="https://tourism.bihar.gov.in/">Bihar</a></li>
+            <li><a href="http://cggovttourism.ddns.net/">Chattisgarh</a></li>
+            <li><a href="https://goa-tourism.com/">Goa</a></li>
+            <li><a href="https://www.gujarattourism.com/">Gujarat</a></li>
+            <li><a href="https://haryanatourism.gov.in/">Haryana</a></li>
+            <li><a href="https://haryanatourism.gov.in/">Himachal_Pradesh</a></li>
+          </ul>
+          <ul class="px-3">
+             
+              <li><a href="https://jharkhandtourism.gov.in/">Jharkhand</a></li>
+              <li><a href="https://www.karnatakatourism.org/">Karnataka</a></li>
+              <li><a href="https://www.keralatourism.org/">Kerala</a></li>
+              <li><a href="https://www.mptourism.com/">Madhya_Pradesh</a></li>
+              <li><a href="https://www.maharashtratourism.gov.in/">Maharashtra</a></li>
+              <li><a href="http://www.manipurtourism.gov.in//"> Manipur</a></li>
+              <li><a href="http://megtourism.gov.in/">Meghalay</a></li>
+              <li><a href="https://tourism.mizoram.gov.in/">Mizoram</a></li>
+              <li><a href="https://tourism.nagaland.gov.in//">Nagaland</a></li>
+              
+            </ul>
+            <ul class="px-3">
+             
+             <li><a href="https://odishatourism.gov.in/content/tourism/en.html">Odisha</a></li>
+              <li><a href="http://punjabtourism.gov.in//">Punjab</a></li>
+              <li><a href="http://www.manipurtourism.gov.in//">Himachal_Pradesh</a></li>
+              <li><a href="http://www.tourism.rajasthan.gov.in/">Rajasthan</a></li>
+              <li><a href="http://www.tamilnadutourism.org/">Tamil_Nadu</a></li>
+              <li><a href="https://www.telanganatourism.gov.in/">Telangana</a></li>
+              <li><a href="http://tripuratourism.gov.in/">Tripura</a></li>
+              <li><a href="http://www.uptourism.gov.in/">Uttar_Pradesh</a></li>
+              <li><a href="https://uttarakhandtourism.gov.in/">Uttarakhand </a></li>
+              <li><a href="http://www.wbtourismgov.in/">West_Bengal</a></li>
+            </ul>
+        </div>
+      </div>
+        <div class="ut-footer col-md-6 " >
+          <h4>Union Territory Websites</h4>
+          <div class="d-flex justify-content-center">
+              <ul  class="px-5">
+                <li><a href="https://www.andaman.gov.in/">Andaman and Nicobar</a></li>
+                <li><a href="http://chandigarhtourism.gov.in/">Chandigarg</a></li>
+                <li><a href="https://www.tourismdddnh.in/">Dadra & Nagar Haveli</a></li>
+                <li><a href="https://www.tourismdddnh.in/">Daman and Diu</a></li>
+                <li><a href="http://www.delhitourism.gov.in/delhitourism/index.jsp">Delhi</a></li>
+                <li><a href="http://www.jktourism.jk.gov.in/">Jammu and Kashmir</a></li>
+                <li><a href="http://www.jktourism.jk.gov.in/">Ladakh</a></li>
+                <li><a href="https://www.lakshadweeptourism.com/">Lakshadweep</a></li>
+                <li><a href="http://www.pondytourism.in/">Puducherry</a></li>
+             </ul>
+          </div>
+        </div>
+        <div style="float: right;margin-top: 10%;">
+          <h6>Created & Managed by:<br><br>Vanshika Pandey</h6>
+          <h6>&copy;Copyright 2020</h6>
+        </div>
+      </div>
+</section>
+</body>
+</html>
